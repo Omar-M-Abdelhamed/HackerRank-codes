@@ -1,0 +1,8 @@
+x=input()
+x=x.split()
+a=0
+for i in x:
+    x[a]=int(i)
+    a+=1
+y=max(x)
+print(x.count(y))
