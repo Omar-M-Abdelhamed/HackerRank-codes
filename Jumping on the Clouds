@@ -1,0 +1,8 @@
+x1=input().split()
+x2=input().split()
+count=x1[0]
+step=x1[1]
+for fl in range(0,count,step):
+    print(fl)
+
+
