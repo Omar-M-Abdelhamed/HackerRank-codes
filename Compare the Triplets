@@ -1,0 +1,10 @@
+x=input()
+y=input()
+a=0
+b=0
+for i,j in zip(x.split(),y.split()):
+    if (int(i)>int(j)):
+        a+=1
+    elif (int(i)<int(j)):
+        b+=1
+print(a,b)
