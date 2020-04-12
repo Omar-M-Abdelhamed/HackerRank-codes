@@ -1,0 +1,17 @@
+x=input().split()
+a=0
+for i in x:
+    x[a]=int(x[a])
+    a+=1
+count_max=0
+count_min=0
+lowest_score=x[0]
+highest_score=x[0]
+for i in range(len(x)):    
+    if x[i] > highest_score:
+        highest_score=x[i]
+        count_max+=1    
+    if x[i] < lowest_score:
+        lowest_score=x[i]
+        count_min+=1
+print(count_max,count_min)
