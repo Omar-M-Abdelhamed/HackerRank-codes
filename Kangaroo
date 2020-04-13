@@ -1,0 +1,19 @@
+x=input()
+
+x=x.split()
+c=0
+for i in x:
+    x[c]=int(i)
+    c+=1
+
+y=x[0]+x[1]
+z=x[2]+x[3]
+for j in range(1000000):
+    if y==z:
+        print('YES')
+        break
+    else:
+        y+=x[1]
+        z+=x[3]
+else:
+    print('NO')
