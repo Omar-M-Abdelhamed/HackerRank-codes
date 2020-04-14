@@ -1,0 +1,17 @@
+ip=input().split()
+a1=0
+ip2=input().split()
+for fl in ip:
+    ip[a1]=int(fl)
+    a1+=1
+a1=0
+for sl in ip2:
+    ip2[a1]=int(sl)
+    a1+=1
+a1=0
+x=ip[1]
+f=ip2[x:]
+y=ip2[:x]
+z=f+y
+for fl in z:
+    print(fl,end=' ')
