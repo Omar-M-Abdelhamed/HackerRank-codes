@@ -1,0 +1,9 @@
+x=input()
+x=x.split()
+a=0
+for i in x:
+    x[a]=int(i)
+    a+=1
+y=max(x)
+z=min(x)
+print(sum(x)-y,sum(x)-z)
