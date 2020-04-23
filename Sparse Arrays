@@ -1,0 +1,18 @@
+x=[]
+y=[]
+i=int(input())
+for fl in range(i):
+    xi=input()
+    x.append(xi)
+i=int(input())
+for sl in range(i):
+    yi=input()
+    y.append(yi)
+for tl in range(len(y)):
+    y1=y[tl]
+    z=0
+    for fl in range(len(x)):
+        x1=x[fl]
+        if y1==x1:
+            z+=1
+    print(z)
