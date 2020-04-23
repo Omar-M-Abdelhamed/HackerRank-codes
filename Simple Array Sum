@@ -1,0 +1,12 @@
+x=input()
+y=input()
+a=[]
+
+def summ():
+    z=0
+    for i in y.split():
+        a.append(int(i))
+    for j in a:
+        z=z+j
+    return print(z)  
+summ()
