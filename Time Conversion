@@ -1,0 +1,16 @@
+x=input()
+if 'PM' in x:
+    y=x.split(':')
+    y[0]=int(y[0])
+    y[2]=y[2].replace('PM','')
+    y[0]=y[0]+12
+    if y[0]==24:
+        y[0]=12
+    y[0]=str(y[0])
+    print(':'.join(y))
+if 'AM' in x:
+    y=x.split(':')
+    y[2]=y[2].replace('AM','')
+    if y[0]=='12':
+        y[0]='00'
+    print(':'.join(y))
